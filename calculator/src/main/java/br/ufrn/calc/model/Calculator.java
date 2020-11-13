@@ -100,8 +100,10 @@ public class Calculator {
     public int div(int a, int b) {
       // Mudança realizada
       if(b == 0)
+    	// Lancamento de excecao para melhorar a robustez
         throw new IllegalArgumentException("Can not divide by zero");
       return a/b;
+
     }
 
 
